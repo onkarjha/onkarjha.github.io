@@ -2,7 +2,6 @@
 <html>
    <head>
       <title>Onkar Jha | Home</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600;900&display=swap" rel="stylesheet">
@@ -22,7 +21,7 @@
       }body{color:white;
       font-family: var(--f);font-weight: bold;
       }nav{width:100%;
-      height: 70px;
+      height: 70px;background: #00000021;
       position: sticky;
       top:0;
       }.nav{
@@ -65,7 +64,7 @@
       }
       button{padding: 10px 15px;
       border-radius: 2px;font-weight: bold;color: white;
-      border:none;
+      border:none;color:#00b0ff;
       transition: 0.6s ease;
       outline: none;margin-left: 10px;border:2px solid #00b0ff;background: transparent;
       font-family: var(--f);text-transform: uppercase;
@@ -117,9 +116,44 @@
       	display: flex;align-items: center;margin-top:10px;
       }
       .add{
-      	background: #ffffff47;
-      	padding: 10px;
+      	background: #ffffff33;
+      	padding: 5px;
       	border-radius: 2px;font-weight: lighter;
+      }.my_skills{
+      	width:800px;
+      	margin:auto;margin-top:20px;margin-bottom:50px;
+      }.my_skill_head{
+      	height: 50px;
+      	display: flex;
+      	align-items: center;
+      }h2{
+      	color:#484848fc;
+      	text-transform: uppercase;
+      }.my_skill_body{
+      	display: flex;width:100%;
+
+      }.v1{
+      	min-width: 250px;width:250px;
+      	box-shadow: var(--shadow);margin:7px;
+      	padding: 5px;border-radius: 5px;padding: 10px;
+      }.video{
+      	width: 100%;
+      }.v_text{
+     color:black;
+      }.port{justify-content: center;
+      	align-items: center;
+      	width:800px;margin: auto;
+      	display: flex;margin-top:40px;margin-bottom: 10px;
+      }.port_image{
+      	width:400px;
+      }.port_text{
+      	padding: 10px;
+      	color:black;
+      }.skill_bot{
+      	height: 50px;
+      	display: flex;
+      	align-items: center;
+      	justify-content: center;
       }
       @keyframes q{
       50%{
@@ -134,7 +168,7 @@
       }.clip{
       clip-path: var(--clip);
       background-image: var(--grad);
-      }  @media only screen and (max-width: 400px){
+      }  @media only screen and (max-width: 600px){
       .body{
       flex-direction: column-reverse;
       }.svg1{
@@ -147,12 +181,27 @@
       	flex-direction: column;margin-top:30px;
       }.foot{
       	flex-direction: column;
+      }h2{
+      	margin-left: 10px;
+      }.my_skill_body{
+      	flex-direction: column;justify-content: center;align-items: center;
+      }.my_skills{
+      	width: 100%;
+      }.v1{
+      	width:auto;
+      	min-width: auto;
+      }.port{
+      	flex-direction: column;width:100%;
+      }.port_image{
+      	width:95%;
+      }.port_l{
+      	display: flex;align-items: center;justify-content: center;
       }
       }
    </style>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <body>
-      <div class="clip ok">
+      <div class="clip">
          <nav>
             <div class="nav">
                <img class="logo" src="logo.png">
@@ -166,7 +215,7 @@
          </nav>
          <div class="body">
             <div class="left">
-               <h1>As cheap as a glass of tea</h1>
+               <h1>As cheap as a cup of tea</h1>
                <p>Hire us we will make your web projects at the lowest cost. Now you no need to pay high amount for a website. I will make a static website in just 10$. Then what are you waiting for ?</p>
                <div class="btn">
                   <button class="btn1">Hire Us</button>
@@ -185,6 +234,51 @@
             </div>
          </div>
       </div>
+      <div class="port">
+      	<div class="port_l">
+      		<img class="port_image" src="coding.svg">
+      	</div>
+      	<div class="port_r">
+      		<p class="port_text">
+      			Onkar Jha is a 18 year old boy. He is not a professional developer but he can make amazing professional websites. He knows html, css, php, jQuery, python and other progrogramming languages. You can hire Onkar Jha for web projects at the lowest price. He can make websites with backend programming languages too.
+      		</p>
+      	</div>
+      </div>
+      <div class="my_skills">
+      	<div class="my_skill_head">
+      		<h2>my skills & videos</h2>
+      	</div>
+      	<div class="my_skill_body">
+      		<div class="v1">
+      			<div>
+      			<img src="https://img.youtube.com/vi/Pbtn4KWhjB4/0.jpg" class="video">
+      			</div>
+      			<div class="v_text">
+      				<p>Amazing login signup form using pure html & css.</p>
+      			</div>
+      		</div>
+      		<div class="v1">
+      			<div>
+      			<img src="https://img.youtube.com/vi/vf69xyD1L4s/0.jpg" class="video">
+      			</div>
+      			<div class="v_text">
+      				<p>How to make your own captcha system using jq & php.</p>
+      			</div>
+      		</div>
+      		<div class="v1">
+      			<div>
+      			<img src="https://img.youtube.com/vi/QfTKPZjOkkA/0.jpg" class="video">
+      			</div>
+      			<div class="v_text">
+      				<p>How to clone instagram from pure html & css.</p>
+      			</div>
+      		</div>
+      		
+      	</div><div class="skill_bot">
+      			<a href="https://www.youtube.com/c/techwithonkar1" target="_blank"><button class="btn1">View All</button></a>
+      		</div>
+      </div>
+
       <div class="footer"><div class="foot">
       	<div class="bot1">
       		<h3>Address</h3>
