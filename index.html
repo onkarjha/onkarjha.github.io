@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Onkar Jha | Home</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600;900&display=swap" rel="stylesheet">
+   </head>
+   <style type="text/css">
+      *{
+      margin:0;
+      padding: 0;
+      box-sizing: border-box;
+      }:root{
+      --f:'Mulish', sans-serif;
+      --grad:linear-gradient(to bottom right, #4caf50, #673ab7);
+      --clip: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0% 90%);
+      --shadow:rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+      --c:#eaeaea;
+      --g:#74d800;
+      }body{color:white;
+      font-family: var(--f);font-weight: bold;
+      }nav{width:100%;
+      height: 70px;
+      position: sticky;
+      top:0;
+      }.nav{
+      max-width: 1280px;
+      width:100%;
+      height: 70px;
+      display: flex;margin:auto;
+      align-items: center;
+      justify-content: space-between;
+      }ul li{
+      font-weight: lighter;
+      list-style: none;
+      display: inline-block;
+      margin-left: 7px;
+      margin-right:7px;
+      }a{
+      text-decoration: none;
+      color:white;
+      }ul{
+      margin-right: 20px;
+      }.body{
+      display: flex;justify-content: space-between;
+      align-items: center;max-width: 1280px;
+      margin:auto;
+      }ul li a{
+      text-transform: uppercase;
+      }.logo{
+      margin-left: 20px;
+      }
+      .left,.right{
+      flex: 1;padding: 20px;
+      }.svg1{
+      width:500px;margin-top:100px;
+      }p{
+      font-weight: lighter;margin-top:10px;
+      }.left{
+      display: flex;flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      }
+      button{padding: 10px 15px;
+      border-radius: 2px;font-weight: bold;color: white;
+      border:none;
+      transition: 0.6s ease;
+      outline: none;margin-left: 10px;border:2px solid #00b0ff;background: transparent;
+      font-family: var(--f);text-transform: uppercase;
+      }.btn{
+      margin-top:20px;
+      }.btn1:hover,.btn2:hover{
+      background: #00b0ff;
+      color:white;
+      }.l1,.l2,.l3,.l4,.l5{background: #00b0ff;
+      width:5px;
+      height: 60px;
+      border-radius: 50px;
+      animation: q;
+      animation: q 1s linear infinite;
+      }.l2{animation-delay: .2s;
+      }.l3{animation-delay: .4s;
+      }.l4{animation-delay:.6s;
+      }.l5{animation-delay: .8s;
+      }.ani div{
+      margin-left: 5px;
+      margin-right: 5px;
+      }.foot{
+      	width:100%;
+      	padding: 20px;
+      	display: flex;
+      	background: black;max-width: 1280px;
+      	margin: auto;
+      }.bot1,.bot2,.bot3{
+      	flex:1;
+      }.bot1 h3,.bot2 h3,.bot3 h3{
+      	text-transform: uppercase;
+      	font-weight: lighter;
+      }.bot1 p{
+        color:#d0d0d0;
+      }.bot2 p{
+        color:#d0d0d0;
+      }.bot3 p{
+        color:#d0d0d0;
+      }.bot1,.bot2,.bot3{
+      	display: flex;
+      	flex-direction: column;
+      	align-items: center;
+      }.footer{
+      	width:100%;background: black;
+      }.ico{
+      	width:30px;
+      	height: 30px;margin-right: 10px;
+      }.add_c{
+      	display: flex;align-items: center;margin-top:10px;
+      }
+      .add{
+      	background: #ffffff47;
+      	padding: 10px;
+      	border-radius: 2px;font-weight: lighter;
+      }
+      @keyframes q{
+      50%{
+      height: 2px;
+      }
+      }.ani{margin-top:40px;width:220px;
+      height: 70px;display: flex;align-items: center;
+      justify-content: center;
+      }.active{
+      color:#00b0ff;
+      font-weight: bold
+      }.clip{
+      clip-path: var(--clip);
+      background-image: var(--grad);
+      }  @media only screen and (max-width: 600px){
+      .body{
+      flex-direction: column-reverse;
+      }.svg1{
+      width:95%;margin: 0;
+      }ul li{
+      display: none;
+      }.clip{
+      clip-path:  polygon(50% 100%, 100% 97%, 100% 0, 0 0, 0% 97%);
+      }.bot2,.bot3{
+      	flex-direction: column;margin-top:30px;
+      }.foot{
+      	flex-direction: column;
+      }
+      }
+   </style>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <body>
+      <div class="clip">
+         <nav>
+            <div class="nav">
+               <img class="logo" src="logo.png">
+               <ul>
+                  <li><a href="#" class="active">Home</a></li>
+                  <li><a href="#">Videos</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Contact Us</a></li>
+               </ul>
+            </div>
+         </nav>
+         <div class="body">
+            <div class="left">
+               <h1>As cheap as a glass of tea</h1>
+               <p>Hire us we will make your web projects at the lowest cost. Now you no need to pay high amount for a website. I will make a static website in just 10$. Then what are you waiting for ?</p>
+               <div class="btn">
+                  <button class="btn1">Hire Us</button>
+                  <button class="btn2">View more</button>
+               </div>
+               <div class="ani">
+                  <div class="l1"></div>
+                  <div class="l2"></div>
+                  <div class="l3"></div>
+                  <div class="l4"></div>
+                  <div class="l5"></div>
+               </div>
+            </div>
+            <div class="right">
+               <img src="coding.svg" class="svg1">
+            </div>
+         </div>
+      </div>
+      <div class="footer"><div class="foot">
+      	<div class="bot1">
+      		<h3>Address</h3>
+      		<p>Harshabardhan Road, A-Zone</p>
+      		<p>Durgapur - 713204, West Bengal, India</p>
+      	</div>
+      	<div class="bot2">
+      		<h3>Services</h3>
+      		
+      		<p>Frontend website</p>
+      		<p>Backend website</p>
+      		<p>Frontend + Backend website</p>
+      		<p></p>
+      	</div>
+      	<div class="bot3">
+      		<h3>Contact Us</h3>
+      		<p>Leave me a message on instagram.</p>
+      		<div class="add_c">
+      			<img src="left.svg" class="ico">
+      			<div class="add">onkarjha2003</div>
+      		</div>
+      		<div class="add_c">
+      			<img src="left.svg" class="ico">
+      			<div class="add">onkarjha2003</div>
+      		</div>
+      		<div class="add_c">
+      			<img src="left.svg" class="ico">
+      			<div class="add">onkarjha2003</div>
+      		</div>
+
+      	</div>
+      </div>
+  </div>
+   </body>
+</html>
