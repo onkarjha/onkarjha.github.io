@@ -2,7 +2,11 @@
 <html>
    <head>
       <title>Onkar Jha | Home</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="UTF-8">
+      <meta name="description" content="Free Web tutorials">
+      <meta name="keywords" content="HTML, CSS, JavaScript">
+      <meta name="author" content="John Doe">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600;900&display=swap" rel="stylesheet">
@@ -20,7 +24,7 @@
       --c:#eaeaea;
       --g:#74d800;
       }body{color:white;
-      font-family: var(--f);font-weight: bold;
+      font-family: var(--f);font-weight: bold;background: #f3f3f3;
       }nav{width:100%;
       height: 70px;background: #00000021;
       position: sticky;
@@ -55,7 +59,7 @@
       .left,.right{
       flex: 1;padding: 20px;
       }.svg1{
-      width:500px;margin-top:100px;
+      width:500px;
       }p{
       font-weight: lighter;margin-top:10px;
       }.left{
@@ -132,9 +136,10 @@
       text-transform: uppercase;
       }.my_skill_body{
       display: flex;width:100%;
+      justify-content: space-between;
       }.v1{
       min-width: 250px;width:250px;
-      box-shadow: var(--shadow);margin:7px;
+      background: white;
       padding: 5px;border-radius: 5px;padding: 10px;
       }.video{
       width: 100%;
@@ -148,12 +153,24 @@
       width:400px;
       }.port_text{
       padding: 10px;
-      color:black;
+      color:#545454;
       }.skill_bot{
       height: 50px;
       display: flex;
       align-items: center;
       justify-content: center;
+      }.span{
+      font-weight: lighter;
+      color: black;
+      text-transform: uppercase;
+      }.ski{transition: 0.6s ease;
+      width:100px;height: 100px;border-radius: 50px;
+      }.div1{
+      display: flex;
+      align-items: center;justify-content: center;
+      flex-direction: column;
+      }.ski:hover{
+      opacity: .5;
       }
       @keyframes q{
       50%{
@@ -196,6 +213,8 @@
       width:95%;
       }.port_l{
       display: flex;align-items: center;justify-content: center;
+      }.div1{
+      margin-top:10px;
       }
       }
    </style>
@@ -218,8 +237,8 @@
                <h1>As cheap as a cup of tea</h1>
                <p>Hire us we will make your web projects at the lowest cost. Now you no need to pay high amount for a website. I will make a static website in just 10$. Then what are you waiting for ?</p>
                <div class="btn">
-                  <button class="btn1">Hire Us</button>
-                  <button class="btn2">View more</button>
+                  <a href="https://www.instagram.com/onkarjha2003" target="_blank">  <button class="btn1">Hire Us</button></a>
+                  <a href="https://www.youtube.com/c/techwithonkar1" target="_blank"><button class="btn2">View more</button></a>
                </div>
                <div class="ani">
                   <div class="l1"></div>
@@ -236,7 +255,7 @@
       </div>
       <div class="port">
          <div class="port_l">
-            <img class="port_image" src="coding.svg">
+            <img class="port_image" src="profile.svg">
          </div>
          <div class="port_r">
             <p class="port_text">
@@ -246,12 +265,12 @@
       </div>
       <div class="my_skills">
          <div class="my_skill_head">
-            <h2>my skills & videos</h2>
+            <h2>my videos</h2>
          </div>
          <div class="my_skill_body">
             <div class="v1">
                <div>
-                  <img src="https://img.youtube.com/vi/Pbtn4KWhjB4/0.jpg" class="video">
+                  <iframe class="img_main" width="100%" height="100%" class="i" src="https://www.youtube.com/embed/Pbtn4KWhjB4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                </div>
                <div class="v_text">
                   <p>Amazing login signup form using pure html & css.</p>
@@ -259,7 +278,7 @@
             </div>
             <div class="v1">
                <div>
-                  <img src="https://img.youtube.com/vi/vf69xyD1L4s/0.jpg" class="video">
+                  <iframe class="img_main" width="100%" height="100%" class="i" src="https://www.youtube.com/embed/vf69xyD1L4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                </div>
                <div class="v_text">
                   <p>How to make your own captcha system using jq & php.</p>
@@ -267,7 +286,7 @@
             </div>
             <div class="v1">
                <div>
-                  <img src="https://img.youtube.com/vi/QfTKPZjOkkA/0.jpg" class="video">
+                  <iframe class="img_main" width="100%" height="100%" class="i" src="https://www.youtube.com/embed/QfTKPZjOkkA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                </div>
                <div class="v_text">
                   <p>How to clone instagram from pure html & css.</p>
@@ -276,6 +295,33 @@
          </div>
          <div class="skill_bot">
             <a href="https://www.youtube.com/c/techwithonkar1" target="_blank"><button class="btn1">View All</button></a>
+         </div>
+      </div>
+      <div class="my_skills">
+         <div class="my_skill_head">
+            <h2>my skills</h2>
+         </div>
+         <div class="my_skill_body">
+            <div class="div1">
+               <img class="ski" src='html.png'>
+               <span class="span">html</span>
+            </div>
+            <div class="div1">
+               <img class="ski" src='css.png'>
+               <span class="span">css</span>
+            </div>
+            <div class="div1">
+               <img class="ski" src='js.png'>
+               <span class="span">javascript</span>
+            </div>
+            <div class="div1">
+               <img class="ski" src='php.png'>
+               <span class="span">php</span>
+            </div>
+            <div class="div1">
+               <img class="ski" src='py.png'>
+               <span class="span">python</span>
+            </div>
          </div>
       </div>
       <div class="footer">
@@ -290,6 +336,7 @@
                <p>Frontend website</p>
                <p>Backend website</p>
                <p>Frontend + Backend website</p>
+               <p>School & college projects</p>
                <p></p>
             </div>
             <div class="bot3">
@@ -297,15 +344,21 @@
                <p>Leave me a message on instagram.</p>
                <div class="add_c">
                   <img src="i.svg" class="ico">
-                  <div class="add">onkarjha2003</div>
+                  <a href="https://www.instagram.com/onkarjha2003" target="_blank">
+                     <div class="add">onkarjha2003</div>
+                  </a>
                </div>
                <div class="add_c">
                   <img src="t.svg" class="ico">
-                  <div class="add">onkarjha2003</div>
+                  <a href="https://www.twitter.com/onkarjha2003" target="_blank">
+                     <div class="add">onkarjha2003</div>
+                  </a>
                </div>
                <div class="add_c">
                   <img src="f.svg" class="ico">
-                  <div class="add">onkarjha2003</div>
+                  <a href="https://www.facebook.com/onkarjha2003" target="_blank">
+                     <div class="add">onkarjha2003</div>
+                  </a>
                </div>
             </div>
          </div>
