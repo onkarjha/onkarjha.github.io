@@ -1,367 +1,874 @@
-<!DOCTYPE html>
 <html>
    <head>
-      <title>Onkar Jha | Home</title>
-      <meta charset="UTF-8">
-      <meta name="description" content="Get professional websites at your own price and of your own choice.">
-      <meta name="keywords" content="HTML, CSS, JavaScript">
-      <meta name="author" content="John Doe">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600;900&display=swap" rel="stylesheet">
+      <title>Home</title>
+      	<link rel="stylesheet" href="assets/css/aos.css" />
+<link rel="stylesheet" href="assets/css/common.css" />
+      <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="assets/css/owl.css">
+ 
+         <script src="assets/js/owl.js"></script>
+      <style type="text/css">
+   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Mulish:wght@500;900&display=swap');
+    
+      :root{
+         
+         --f1:'Mulish', sans-serif;
+         --f2: 'Montserrat', sans-serif;
+         --bs:rgba(149, 157, 165, 0.2) 0px 8px 24px;
+         --p:#007bff;
+         --s:#6610f2;
+         --hover:#085cb7;
+         }
+         *{
+         margin:0;
+         padding:0;
+         transition: .3s ease-in;
+         box-sizing:border-box;
+         font-family: var(--f1);
+         }a{
+         cursor:pointer;
+         color: inherit;
+         text-decoration: none;}
+         p{color: #4a4a4a;
+         font-size:15px;}
+         .btn{cursor:pointer;
+         padding:0 25px;
+         border-radius: 10px;
+         border:none;background: transparent;
+         outline:none;color:white;
+         height:45px;
+         }.btn:hover{
+         background: #085cb7;}input,textarea{resize:none;
+         border:none;padding:0 25px;
+         border-radius: 10px;background: transparent;
+         border:none;
+         outline:none;transition: .3s ease-in;
+         height:45px;
+         outline: none;}
+         .bx{
+         }
+         .btn1{color:white;
+         margin-left: 20px;
+         background:var(--p);}
+         .btn1:hover{
+         background:var(--hover);}
+         body{
+         background:#eff1ff;}
+ header{
+     box-shadow: var(--bs);
+     width:100%;
+     height: 70px;
+     background:white;
+     position: sticky;
+    z-index:2;
+     top:0
+}
+ nav{
+     z-index:100;
+     padding:0 30px;
+     width:100%;
+     max-width:1280px;
+     margin:auto;
+     height: 70px;
+     display: flex;
+     justify-content:space-between;
+     align-items: center;
+}
+ .logo{
+     width: auto;
+     height: 50px;
+}
+ nav div{
+    align-items: center;
+     display: flex;
+}
+ .header-links{
+     align-items: center;
+     display: flex;
+}
+ .link-head{
+     height:70px;
+    display: flex;
+     transition:.3s ease-in;
+    cursor: pointer;
+     justify-content:center;
+     padding: 0 5px;
+    margin-left: 10px;
+    margin-right:10px;
+     align-items: center;
+    border-bottom:2px solid transparent;
+}
+ .link-head a{
+}
+.activee{
+     border-bottom:2px solid var(--p)
+}
+ .link-head:hover{
+    border-bottom:2px solid var(--p)
+}
+ .sub-header-menu{
+    background: #fff;
+     z-index:100;
+     position: fixed;
+    box-shadow:var(--bs);
+     top:73px;
+     border-radius: 3px;
+     position:fixed;
+}
+ .sub-header-menu div ul li{
+     display: flex;
+     justify-content:center;
+     padding: 15px;
+}
+ .sub-header-menu div{
+     padding: 20px;
+    display: none;
+}
+ .sub-header-menu div ul li:hover{
+     border-bottom: 2px solid var(--p);
+     color:var(--p);
+}
+/*
+       .drop_it:hover + .sub-header-menu div{display: block;}
+       .sub-header-menu div:hover{
+       display: block;}*/
+       
+       
+       
+       
+         .loader-relative{
+         width:100px;
+         background:#fff;
+         height:10px;
+         display: flex;
+         align-items: center;border-radius: 10px;
+         margin:100px;
+         border-radius: 3px;
+         box-shadow:var(--bs);
+         }
+         
+         
+         
+         .loader-absolute{
+         border-radius: 50px;
+         height: 7px;
+         width:7px;
+         background:var(--s);
+         animation:example 3s linear infinite;
+         }@keyframes example {
+         }/* subscribe */
+         .subscribe-form{
+         width:100%;
+         max-width:1280px;
+         padding: 50px;width:100%;
+         background: var(--s);
+         border-radius: 5px;
+         margin:auto;
+        
+         background:linear-gradient(#007bffb3,#000000a3),url(1.png);
+          background-repeat: no-repeat;
+         background-size: cover;
+         }
+         .bx-mail-send{text-align: center;
+         color:white;font-size:70px;padding-bottom :20px;
+         margin:auto;}.subscribe-form form{box-shadow: var(--bs);
+         display: flex;width:500px;margin:auto;padding: 10px;
+         background: white;border-radius: 10px;
+         }.input1{width:100%;border-radius: 10px ;
+         background: white;}.btn-subscribe{border-radius: 10px;
+         background: var(--p);color:white;}.white{
+         padding-bottom :20px;
+         text-align: center;
+         color:white;}.flex{
+         display: flex;
+         justify-content:center;}/**/
+         /**/
+         .pricing{
+         justify-content:center;
+         display: flex;}.pricing_tables{border:1px solid transparent;
+         padding: 30px;
+         border-radius: 10px;margin-left: 10px;
+         margin-right:10px;
+         box-shadow: var(--bs);background: white;}
+         .price_num{
+         font-size:45px;}.m-t p{
+         margin-top:15px;}.flex-direction{align-items: center;
+         flex-direction:column;}.btn2{
+         width:200px;margin-top:30px;
+         background: var(--p);}.pricing_tables h3{margin-bottom: 25px;
+         text-align: center;}.colour-light{
+         color:#4a4a4a;}.btn2:hover{
+         background: #085cb7;}.align-self{
+         align-self:flex-end;margin-bottom:10px;
+         }.price_icon_div{
+         width:70px;
+         height:70px;
+         border-radius:50px;
+         background:var(--p);margin:auto;
+         display:flex;align-items:center;justify-content:center;margin-bottom:10px;}
+         .price_icon_div i{
+         color:white;font-size:40px;}
+         .pricing_tables:hover{cursor:pointer;
+         border:1px solid var(--p);}.justify-proper{
+         align-items: center;}.year-margin,.month-margin{
+         margin: 20px;}.center{
+         text-align: center;}
+         /* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;cursor:pointer;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: var(--p);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--p);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}/**/
+.contact_us_main{
+width:100%;
+max-width: 1280px;
+margin:auto;
+height: auto;padding: 30px; background:url(3.png);
+          background-repeat: no-repeat;
+         background-size: cover;
+         position: relative;
+/*-webkit-clip-path: polygon(50% 0%, 100% 0, 100% 50%, 50% 100%, 0 100%, 0 50%);
+clip-path: polygon(50% 0%, 100% 0, 100% 50%, 50% 100%, 0 100%, 0 50%);*/
+}.contact_us{
+width:100%;
+max-width:800px;
+padding:50px;
+border-radius: 10px;
+
+box-shadow: var(--bs);
+z-index: -1;;margin:auto;
+background: white;}
+.contact_us form input{
+width:100%;
+margin:10px;
+border-radius: 10px;
+background: #f7f7f7;
+border:1px solid transparent;}.textarea{
+width:calc(100% - 20px);height: 100px;
+margin:10px;padding-top: 10px;
+border-radius: 10px;
+background: #f7f7f7;
+border:1px solid transparent;
+}.btn-contact-send{
+margin-top:10px;
+margin-left: 10px;
+border-radius: 10px;
+background: var(--p);}input:focus,textarea:focus{border:1px solid var(--p)!important;
+}/**/
+.testimonials{
+width:100%;
+max-width: 1280px;
+margin:auto;
+height: auto;
+position: relative;
+}.testi_style1{top:0px;left:10px;width:300px;height:300px;
+display: flex;justify-content:center;align-items: center;
+border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+position: absolute;}
+
+
+.testi_style1 i{
+color:var(--p);
+font-size:300px;}
+
+
+.testi_style2{bottom: -80px;right:10px;width:300px;height:300px;animation-name: a2;
+  animation-duration: 4s;
+  animation: a2 4s linear infinite;
+border-radius:31% 69% 29% 71% / 72% 67% 33% 28% ;background: linear-gradient(#007bff,#085cb7);position: absolute;}
+.testimoial_inside{
+width:100%;
+max-width:800px;
+border-radius: 10px;
+box-shadow: var(--bs);
+z-index: -1;;margin:auto;
+background: white;}
+.testi_out_div{
+width:800px;padding:50px;
+display: flex;
+justify-content:center;
+align-items: center;
+margin:auto;
+}
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled{
+display: flex!important;
+justify-content:space-between;width:800px;;position: absolute;top:90px;
+}.owl-prev{
+padding: 20px 10px!important;
+background: var(--p)!important;;
+color:white!important;;
+border-radius: 0 5px 5px 0!important;
+border:none;
+outline:none;
+margin:0;
+}.owl-next{
+padding: 20px 10px!important;
+margin:0;
+background: var(--p)!important;;
+color:white!important;;
+border-radius: 5px 0 0 5px!important;
+border:none;
+outline:none;
+}.owl-carousel.owl-loaded{position: relative;
+}.owl-theme .owl-nav [class*=owl-],.owl-theme .owl-nav{
+margin:0!important;}.avatar{background: linear-gradient(#007bff,#085cb7);
+width:150px!important;
+height:150px!important;
+box-shadow:var(--bs);
+border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+padding:3px;
+object-fit:cover;
+}.testi_left{height: 100%;display: flex;justify-content:center;align-items:center;
+flex:1;}.testi_right{height: 100%;display: flex;justify-content:center;flex-direction:column;paddinsg: 20px;
+flex:2;}.bxs-star,.bxs-star-half{
+color: #ffc107;font-size: 30px;}
+
+
+/**/
+@keyframes a1 {
+ 50%{border-radius:32% 68% 56% 44% / 49% 37% 63% 51%;
+     top:100px;
+     right:200px;
+  }
+
+}@keyframes a2 {
+  50%{border-radius: 61% 39% 62% 38% / 7% 25% 75% 93% ;}
+  100%{border-radius:31% 69% 29% 71% / 72% 67% 33% 28% ;
+  }
+  
+}
+      </style>
    </head>
-   <style type="text/css">
-      *{
-      margin:0;
-      padding: 0;
-      box-sizing: border-box;
-      }:root{
-      --f:'Mulish', sans-serif;
-      --grad:linear-gradient(to bottom right, #4caf50, #673ab7);
-      --clip: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0% 90%);
-      --shadow:rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-      --c:#eaeaea;
-      --g:#74d800;
-      }body{color:white;
-      font-family: var(--f);font-weight: bold;background: #f3f3f3;
-      }nav{width:100%;
-      height: 70px;background: #00000021;
-      position: sticky;
-      top:0;
-      }.nav{
-      max-width: 1280px;
-      width:100%;
-      height: 70px;
-      display: flex;margin:auto;
-      align-items: center;
-      justify-content: space-between;
-      }ul li{
-      font-weight: lighter;
-      list-style: none;
-      display: inline-block;
-      margin-left: 7px;
-      margin-right:7px;
-      }a{
-      text-decoration: none;
-      color:white;
-      }ul{
-      margin-right: 20px;
-      }.body{
-      display: flex;justify-content: space-between;
-      align-items: center;max-width: 1280px;
-      margin:auto;
-      }ul li a{
-      text-transform: uppercase;
-      }.logo{
-      margin-left: 20px;
-      }
-      .left,.right{
-      flex: 1;padding: 20px;
-      }.svg1{
-      width:500px;
-      }p{
-      font-weight: lighter;margin-top:10px;
-      }.left{
-      display: flex;flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      }
-      button{padding: 10px 15px;
-      border-radius: 2px;font-weight: bold;color: white;
-      border:none;color:#00b0ff;
-      transition: 0.6s ease;
-      outline: none;margin-left: 10px;border:2px solid #00b0ff;background: transparent;
-      font-family: var(--f);text-transform: uppercase;
-      }.btn{
-      margin-top:20px;
-      }.btn1:hover,.btn2:hover{
-      background: #00b0ff;
-      color:white;
-      }.l1,.l2,.l3,.l4,.l5{background: #00b0ff;
-      width:5px;
-      height: 60px;
-      border-radius: 50px;
-      animation: q;
-      animation: q 1s linear infinite;
-      }.l2{animation-delay: .2s;
-      }.l3{animation-delay: .4s;
-      }.l4{animation-delay:.6s;
-      }.l5{animation-delay: .8s;
-      }.ani div{
-      margin-left: 5px;
-      margin-right: 5px;
-      }.foot{
-      width:100%;
-      padding: 20px;
-      display: flex;
-      background: black;max-width: 1280px;
-      margin: auto;
-      }.bot1,.bot2,.bot3{
-      flex:1;
-      }.bot1 h3,.bot2 h3,.bot3 h3{
-      text-transform: uppercase;
-      font-weight: lighter;
-      }.bot1 p{
-      color:#d0d0d0;
-      }.bot2 p{
-      color:#d0d0d0;
-      }.bot3 p{
-      color:#d0d0d0;
-      }.bot1,.bot2,.bot3{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      }.footer{
-      width:100%;background: black;
-      }.ico{
-      width:30px;
-      height: 30px;margin-right: 10px;
-      }.add_c{
-      display: flex;align-items: center;margin-top:10px;
-      }
-      .add{
-      background: #ffffff33;
-      padding: 5px;
-      border-radius: 2px;font-weight: lighter;
-      }.my_skills{
-      width:800px;
-      margin:auto;margin-top:20px;margin-bottom:50px;
-      }.my_skill_head{
-      height: 50px;
-      display: flex;
-      align-items: center;
-      }h2{
-      color:#484848fc;
-      text-transform: uppercase;
-      }.my_skill_body{
-      display: flex;width:100%;
-      justify-content: space-between;
-      }.v1{
-      min-width: 250px;width:250px;
-      background: white;
-      padding: 5px;border-radius: 5px;padding: 10px;
-      }.video{
-      width: 100%;
-      }.v_text{
-      color:black;
-      }.port{justify-content: center;
-      align-items: center;
-      width:800px;margin: auto;
-      display: flex;margin-top:40px;margin-bottom: 10px;
-      }.port_image{
-      width:400px;
-      }.port_text{
-      padding: 10px;
-      color:#545454;
-      }.skill_bot{
-      height: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      }.span{
-      font-weight: lighter;
-      color: black;
-      text-transform: uppercase;
-      }.ski{transition: 0.6s ease;
-      width:100px;height: 100px;border-radius: 50px;
-      }.div1{
-      display: flex;
-      align-items: center;justify-content: center;
-      flex-direction: column;
-      }.ski:hover{
-      opacity: .5;
-      }
-      @keyframes q{
-      50%{
-      height: 2px;
-      }
-      }.ani{margin-top:40px;width:220px;
-      height: 70px;display: flex;align-items: center;
-      justify-content: center;
-      }.active{
-      color:#00b0ff;
-      font-weight: bold
-      }.clip{
-      clip-path: var(--clip);
-      background-image: var(--grad);
-      }  @media only screen and (max-width: 600px){
-      .body{
-      flex-direction: column-reverse;
-      }.svg1{
-      width:95%;margin: 0;
-      }ul li{
-      display: none;
-      }.clip{
-      clip-path:  polygon(50% 100%, 100% 97%, 100% 0, 0 0, 0% 97%);
-      }.bot2,.bot3{
-      flex-direction: column;margin-top:30px;
-      }.foot{
-      flex-direction: column;
-      }h2{
-      margin-left: 10px;
-      }.my_skill_body{
-      flex-direction: column;justify-content: center;align-items: center;
-      }.my_skills{
-      width: 100%;
-      }.v1{
-      width:95%;
-      margin-top: 10px;
-      }.port{
-      flex-direction: column;width:100%;
-      }.port_image{
-      width:95%;
-      }.port_l{
-      display: flex;align-items: center;justify-content: center;
-      }.div1{
-      margin-top:10px;
-      }
-      }
-   </style>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script type="text/javascript" >
+   $(document).ready(function () {
+   	$(".drop_it").click(function () {
+   		$(this).children(".sub-header-menu").children("div").toggle();
+   	});
+   });
+   </script>
    <body>
-      <div class="clip">
+      <header>
          <nav>
-            <div class="nav">
-               <img class="logo" src="logo.png">
-               <ul>
-                  <li><a href="#" class="active">Home</a></li>
-                  <li><a href="#">Videos</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Contact Us</a></li>
+            <img src="logo.png" alt="logo" class="logo">
+            <div>
+               <ul class="header-links">
+                  <li class="link-head activee">
+                     <a href="">Home</a>
+                  </li>
+                  <li class="link-head"><a href="">Placements</a></li>
+                  <li class="link-head drop_it">
+                     <a style="height:70px;display: flex;align-items:center;">Courses</a>
+                     <!--sub-header-->
+                     <div class="sub-header-menu">
+                     <div>
+                        <ul>
+                        <li><a href="#" >Google</li></a>
+<li><a href="#" >Youtube</li></a>
+<li><a href="#" >Paytm</li></a>
+<li><a href="#" >Paypal</li></a>
+<li><a href="#" >WhatsApp</li></a>
+
+                        </ul>
+                     </div>
+                     <div>
+                                             <ul>
+                                    <li><a href="#" >Amazon</li></a>
+<li><a href="#" >Facebook</li></a>
+<li><a href="#" >Instagram</li></a>
+<li><a href="#" >Twitter</li></a>
+<li><a href="#" >SnapChat</li></a>
+                        </ul>
+                     </div>
+                     </div>
+                     <!--sub-header ends-->
+                  </li>
+                  <li class="link-head"><a href="">Gallary</a></li>
+                  <li class="link-head"><a href="">Contact Us</a>
+                  </li>
+                  <li class="link-head"><a href="">About Us</a></li>
                </ul>
+               <button class="btn btn1">Sign Up</button>
             </div>
          </nav>
-         <div class="body">
-            <div class="left">
-               <h1>As cheap as a cup of tea</h1>
-               <p>Hire us we will make your web projects at the lowest cost. Now you no need to pay high amount for a website. I will make a static website in just 10$. Then what are you waiting for ?</p>
-               <div class="btn">
-                  <a href="https://www.instagram.com/onkarjha2003" target="_blank">  <button class="btn1">Hire Us</button></a>
-                  <a href="https://www.youtube.com/c/techwithonkar1" target="_blank"><button class="btn2">View more</button></a>
-               </div>
-               <div class="ani">
-                  <div class="l1"></div>
-                  <div class="l2"></div>
-                  <div class="l3"></div>
-                  <div class="l4"></div>
-                  <div class="l5"></div>
-               </div>
-            </div>
-            <div class="right">
-               <img src="coding.svg" class="svg1">
-            </div>
-         </div>
+      </header>
+      <!--loader
+      <div class="loader-relative">
+         <div class="loader-absolute"></div>
       </div>
-      <div class="port">
-         <div class="port_l">
-            <img class="port_image" src="profile.svg">
+     loader-->
+     <!-- ========== top=======-->
+     <style type="text/css">
+     .top_section{
+     width:100%;
+     height:90vh;
+     position: relative;
+    /* background-image: url("bg.png");*/
+    background-image: radial-gradient(#007bff,#6610f2); 
+     background-origin: center;
+     background-repeat: no-repeat;
+     z-index:-1;-webkit-clip-path: polygon(71% 83%, 100% 100%, 100% 0, 0 0, 0 100%);
+clip-path: polygon(71% 83%, 100% 100%, 100% 0, 0 0, 0 100%);
+     background-size: cover;
+    }.top_section_absolute{
+    width:100%;
+    display: flex;
+    padding: 0 30px;
+    align-items: center;
+    height:90vh;
+    top:70px;
+    z-index: 1;
+    position: absolute;}
+    .top_section_left,.top_section_right{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    flex:1}.top_left_img{
+    animation-name: top_btm;
+  animation-duration: 3s;
+  animation: top_btm 3s linear infinite;
+    height: 600px;margin-top:100px;}
+    .color{
+    color:white;
+    font-size: 40px;
+    font-weight: 900;
+    }    .color_p{
+    margin-top:20px;
+    color:white;
+    font-size: 20px;
+
+    }.d1{   animation-name: rot;
+  animation-duration: 3s;z-index: -1;
+  animation: rot 3s linear infinite;
+    position: absolute;
+    top:30px;
+    left:30px;}.d2{   animation-name: left;
+  animation-duration: 3s;z-index: -1;
+  animation: left 3s linear infinite;
+    position: absolute;
+    top:30px;
+    left:300px;}.btn-home-top-text{
+    font-size:22px;
+    background-image: linear-gradient(#673AB7,#3d236b);
+    box-shadow: var(--bs);
+    padding: 20px 35px;z-index: 5;
+    height: auto;transition:all .3s ease;
+    }.btn-home-top-text:hover{
+     animation-name: button_ani;
+  animation-duration: 1s;
+  animation: button_ani 1s linear infinite;
+    background-image: linear-gradient(#3d236b,#673AB7);
+  
+    }
+.btn-white-contact{
+width:50px;
+display: flex;
+justify-content:center;
+align-items: center;
+height: 50px;padding: 0;
+background: white;}
+.bxs-phone{
+color:var(--p);}.top_right_ani{top:20px;right:10px;width:120px;height:120px;
+display: flex;justify-content:center;align-items: center;
+  background: red;animation-name: a1;
+  animation-duration: 2s;
+  animation: a1 2s linear infinite;z-index:-1;
+border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+background:linear-gradient(#9C27B0,#FF5722);position: absolute;}
+.home_top_over_div{
+width:350px;
+height: 150px;
+border-radius: 20px;
+transform:rotate(5deg);
+background-image:linear-gradient(#ffffff42,transparent);
+left: -30px;bottom: 200px;z-index:-1;
+position: absolute;}
+@media only screen and (max-width: 600px) {
+  nav div{
+  display: none;}
+  .top_section_absolute{height:auto;
+  flex-direction:column-reverse;}
+  .top_section_left, .top_section_right{
+  flex:auto;}
+  .top_section{
+  height: 1250px;}
+.subscribe-form form{
+width:100%;}.pricing{
+
+flex-direction:column;}
+.pricing_tables{
+margin-top:15px;}
+.top_left_img{
+width:100%;height:auto;}
+.testi_out_div{width:100%;
+flex-direction:column;}
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled{
+width:100%}.testimoial_inside{
+width:95%;}
+}
+
+
+    @keyframes top_btm{
+    50%{
+    margin-top:60px;
+    }
+    }    
+    @keyframes rot{
+    50%{
+    transform:rotate(45deg);
+    }
+    }  @keyframes button_ani{
+    50%{
+  margin-left:20px;
+    }
+    }
+     </style>
+     <section class="top_section">
+     </section><section class="top_section_absolute">
+       <div class="top_section_left">
+       <img src="d1.png" alt="" class="d1" data-aos="flip-down">
+   <div class="home_top_over_div"></div>
+         <div class="top_right_ani"></div>
+         <h1 class="color">Work Hard Achieve Success</h1>
+         <p class="color_p">We are here to help you everytime! You can catch us anytime when you have time.</p>
+      <br><a href="#">  <button class="btn btn-home-top-text">Let's Start</button></a>
+       
+       </div>
+ <div class="top_section_right"><div>
+ <img src="mobile.png" alt="" class="top_left_img"></div>
+ </div>
+       </section>
+     <!-- ===== top ends ===== -->
+     <br><br>
+     <!-- 
+     <style type="text/css">
+     .projects{
+     display: flex;
+     justify-content:center;
+     width:100%;
+     max-width:1280px;}
+     .project-item{
+     border-radius: 5px;
+     padding: 30px;width:170px;
+     box-shadow: var(--bs);
+     background: white;
+     }.project_item_top{
+     width:100%;
+     display: flex;
+     margin-top:-55px;
+     justify-content:center;}
+     .project_icon_div{
+     display: flex;
+     width:50px;
+border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+     height: 50px;
+     justify-content:center;
+     background: linear-gradient(#007bff,#085cb7);
+     align-items: center;}
+     .project_des{
+     display: flex;
+     flex-direction:column;align-items: center;
+     }
+    
+     </style>
+     <section class="projects">
+     <div class="project-item" data-aos="fade-in">
+     <div class="project_item_top">
+       <div class="project_icon_div">
+           <i class="bx bxs-projects"></i>
+       </div>
+     </div>
+            <div class="project_des">
+            <br>
+       <h1>400+</h1>
+       <br>
+       <p class="center">PROJECTS</p>
+       </div>
+     </div>
+     </section>
+     <br><br>
+     projects ends =======-->
+     <!--  ====== Gallary ====-->
+     <style type="text/css">
+     .gallary{
+     width:100%;
+     max-width:1280px;}
+     </style>
+     <section class="gallary">
+     
+     </section>
+     <!-- ====== Gallary Ends-->
+      <section class="subscribe-form" data-aos="flip-right"> 
+         <div class="flex">
+            <i class="bx bx-mail-send"></i>
          </div>
-         <div class="port_r">
-            <p class="port_text">
-               Onkar Jha is a 18 year old boy. He is not a professional developer but he can make amazing professional websites. He knows html, css, php, jQuery, python and other progrogramming languages. You can hire Onkar Jha for web projects at the lowest price. He can make websites with backend programming languages too.
-            </p>
-         </div>
+         <h2 class="white">SUBSCRIBE US</h2>
+         <p class="white">Get our latest notification without missing any second !</p>
+         <form >
+            <input type="email" required placeholder="Email Address..." class="input1">
+            <button class="btn btn-subscribe">Subscribe</button></div>
+         </form>
+      </section>
+      <!-- =================-->
+      <br><br>
+            <h3 class="center">OUR PRICING</h3>
+      <div class="flex justify-proper">
+      <span class="month-margin">MONTHLY</span>
+      <label class="switch">
+  <input type="checkbox"/>
+  <span class="slider round"></span>
+</label>
+      <span class="year-margin">YEARLY</span>
       </div>
-      <div class="my_skills">
-         <div class="my_skill_head">
-            <h2>my videos</h2>
-         </div>
-         <div class="my_skill_body">
-            <div class="v1">
-               <div>
-                  <iframe class="img_main" width="100%"  class="i" src="https://www.youtube.com/embed/Pbtn4KWhjB4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-               </div>
-               <div class="v_text">
-                  <p>Amazing login signup form using pure html & css.</p>
-               </div>
+      <br>
+     
+      <section class="pricing">
+
+         <div class="pricing_tables" data-aos="slide-left">
+            <h3>Baisc</h3>
+            <div class="price_icon_div">
+            <i class="bx bxs-pie-chart-alt-2"></i>
             </div>
-            <div class="v1">
-               <div>
-                  <iframe class="img_main" width="100%" height="100%" class="i" src="https://www.youtube.com/embed/vf69xyD1L4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-               </div>
-               <div class="v_text">
-                  <p>How to make your own captcha system using jq & php.</p>
-               </div>
+            <div class="flex up-down">
+               <h2 class="price_num">$9</h2>
+               <p class="colour-light align-self"> /Monthly</p>
             </div>
-            <div class="v1">
-               <div>
-                  <iframe class="img_main" width="100%" height="100%" class="i" src="https://www.youtube.com/embed/QfTKPZjOkkA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-               </div>
-               <div class="v_text">
-                  <p>How to clone instagram from pure html & css.</p>
-               </div>
+            
+            <div class="flex flex-direction m-t">
+               <br>
+               <p class="colour-light m-t">1 GB Disk Space</p>
+               <p class="colour-light m-t">10 GB Bandwidth</p>
+               <p class="colour-light m-t">1 Email Address</p>
+               <p class="colour-light m-t">PHP Support</p>
+               <p class="colour-light m-t">Private Support</p>
+               <button class="btn btn2">Sign Up</button>
             </div>
          </div>
-         <div class="skill_bot">
-            <a href="https://www.youtube.com/c/techwithonkar1" target="_blank"><button class="btn1">View All</button></a>
+         <div class="pricing_tables" data-aos="zoom-in">
+            <h3>Premium</h3>
+            <div class="price_icon_div">
+            <i class="bx bxs-bar-chart-alt-2"></i>
+            </div>
+            <div class="flex up-down">
+               <h2 class="price_num">$25</h2>
+               <p class="colour-light align-self"> /Monthly</p>
+            </div>
+            <div class="flex flex-direction m-t">
+               <br>
+               <p class="colour-light m-t">1 GB Disk Space</p>
+               <p class="colour-light m-t">10 GB Bandwidth</p>
+               <p class="colour-light m-t">1 Email Address</p>
+               <p class="colour-light m-t">PHP Support</p>
+               <p class="colour-light m-t">Private Support</p>
+               <button class="btn btn2">Sign Up</button>
+            </div>
          </div>
+         <div class="pricing_tables" data-aos="slide-right">
+            <h3>Business</h3>
+            <div class="price_icon_div">
+            <i class="bx bx-store"></i>
+            </div>
+            <div class="flex up-down">
+               <h2 class="price_num">$45 </h2>
+               <p class="colour-light align-self"> /Monthly</p>
+            </div>
+            <div class="flex flex-direction m-t">
+               <br>
+               <p class="colour-light m-t">1 GB Disk Space</p>
+               <p class="colour-light m-t">10 GB Bandwidth</p>
+               <p class="colour-light m-t">1 Email Address</p>
+               <p class="colour-light m-t">PHP Support</p>
+               <p class="colour-light m-t">Private Support</p>
+               <button class="btn btn2">Sign Up</button>
+            </div>
+         </div>
+         <div>
+         </div>
+         </div>
+      </section>
+      <br><br><!--====-->
+      <!--======== CONTACT US-->
+      <section class="contact_us_main">
+        
+      <div class="contact_us" data-aos="zoom-in">
+      <h3 class="center">CONTACT US</h3><br>
+      <p class="center">We are here to help you 24/7 !</p>
+      <form>
+      <br>
+      <div class="flex">
+      <input type="text" class="" placeholder="Enter Name" required />
+      
+      <input type="text" class="" placeholder="Last Name" required />
       </div>
-      <div class="my_skills">
-         <div class="my_skill_head">
-            <h2>my skills</h2>
-         </div>
-         <div class="my_skill_body">
-            <div class="div1">
-               <img class="ski" src='html.png'>
-               <span class="span">html</span>
-            </div>
-            <div class="div1">
-               <img class="ski" src='css.png'>
-               <span class="span">css</span>
-            </div>
-            <div class="div1">
-               <img class="ski" src='js.png'>
-               <span class="span">javascript</span>
-            </div>
-            <div class="div1">
-               <img class="ski" src='php.png'>
-               <span class="span">php</span>
-            </div>
-            <div class="div1">
-               <img class="ski" src='py.png'>
-               <span class="span">python</span>
-            </div>
-         </div>
+      <div class="flex">
+      <input type="email" class="" placeholder="Enter Email" required />
+      <input type="number" class="" placeholder="Enter Phone" required />
       </div>
-      <div class="footer">
-         <div class="foot">
-            <div class="bot1">
-               <h3>Address</h3>
-               <p>Harshabardhan Road, A-Zone</p>
-               <p>Durgapur - 713204, West Bengal, India</p>
-            </div>
-            <div class="bot2">
-               <h3>Services</h3>
-               <p>Frontend website</p>
-               <p>Backend website</p>
-               <p>Frontend + Backend website</p>
-               <p>School & college projects</p>
-               <p></p>
-            </div>
-            <div class="bot3">
-               <h3>Contact Us</h3>
-               <p>Leave me a message on instagram.</p>
-               <div class="add_c">
-                  <img src="i.svg" class="ico">
-                  <a href="https://www.instagram.com/onkarjha2003" target="_blank">
-                     <div class="add">onkarjha2003</div>
-                  </a>
-               </div>
-               <div class="add_c">
-                  <img src="t.svg" class="ico">
-                  <a href="https://www.twitter.com/onkarjha2003" target="_blank">
-                     <div class="add">onkarjha2003</div>
-                  </a>
-               </div>
-               <div class="add_c">
-                  <img src="f.svg" class="ico">
-                  <a href="https://www.facebook.com/onkarjha2003" target="_blank">
-                     <div class="add">onkarjha2003</div>
-                  </a>
-               </div>
-            </div>
-         </div>
+      <textarea class="textarea" placeholder="Your Query" required></textarea>
+      <button class="btn btn-contact-send" type="submit">Submit</button>
+      </form>
       </div>
+      </section>
+      <!--=== CONTACT US ENDS-->
+      <br>
+      <!--====== TESTIMONIALS--======-->
+      <section class="testimonials" >
+      <div class="testi_style1">
+      <i class="bx bxs-quote-alt-left"></i>
+      </div><br><br><br><br><br><br><br>
+      <div class="testi_style2"></div>
+      <div class="testimoial_inside" data-aos="flip-right">
+      <br><br>
+      <h3 class="center">TESTIMONIALS</h3><BR>
+      <p class="center">Do you know what people say about us ?</p>
+      
+      <div class="owl-carousel owl-theme">
+          <div class="testi_out_div">
+              <div class="testi_left">
+              <img src="onkar.png" alt="Avatar" class="avatar">
+              </div>
+              <div class="testi_right">
+              <h3>Onkar Jha</h3>
+              <br>
+              <p>This is the best website i ever visited and i would suggest everyone to visit this great website. You guys gonna enjoy the features of this website. I wanna rate it 5 Star.</p>
+              <br>
+              <div class="">
+              <i class="bx bxs-star"></i>
+<i class="bx bxs-star"></i>
+<i class="bx bxs-star"></i>
+<i class="bx bxs-star"></i>
+<i class="bx bxs-star"></i>
+              </div>
+              </div>
+            </div>   
+
+
+
+<div class="testi_out_div">
+              <div class="testi_left">
+              <img src="mark.jpeg" alt="Avatar" class="avatar">
+              </div>
+              <div class="testi_right">
+              <h3>Mark Zukkerberg</h3>
+              <br>
+              <p>Lol good website but can't beat facebook. But keep trying ! I met bill yesterday he was with buffet.</p>
+              <br>
+              <div class="">
+              <i class="bx bxs-star"></i>
+<i class="bx bxs-star"></i>
+<i class="bx bxs-star"></i>
+<i class="bx bxs-star"></i>
+<i class="bx bxs-star-half"></i>
+              </div>
+              </div>
+            </div>   
+           <div class="testi_out_div">
+              <div class="testi_left">
+              <img src="bill.jpeg" alt="Avatar" class="avatar">
+              </div>
+              <div class="testi_right">
+              <h3>Bill Gates</h3>
+              <br>
+              <p>Don't have anything to write !!!! Lol good website but can't beat facebook. But keep trying ! I met bill yesterday he was with buffet.</p>
+              <br>
+              <div class="">
+              <i class="bx bxs-star"></i>
+<i class="bx bxs-star"></i>
+<i class="bx bxs-star"></i>
+<i class="bx bxs-star"></i>
+<i class="bx bxs-star"></i>
+              </div>
+              </div>
+            </div>   
+            
+      </div><br><br>
+      </div>
+      
+      </section>
+      <!-- ========= tESTIMONIALS ENDS-->
+      <br><br><br><br>
+      
+	 <script src="assets/js/aos.js"></script>
+    	<script>
+			AOS.init({
+				easing: 'ease-out-back',
+				duration: 1000
+			});
+		</script>
+		          <script>
+            $(document).ready(function() {
+              var owl = $('.owl-carousel');
+              owl.owlCarousel({
+                items: 1,
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 1000,
+                autoplayHoverPause: true
+              });
+              $('.play').on('click', function() {
+                owl.trigger('play.owl.autoplay', [1000])
+              })
+              $('.stop').on('click', function() {
+                owl.trigger('stop.owl.autoplay')
+              })
+            })
+          </script>
    </body>
 </html>
