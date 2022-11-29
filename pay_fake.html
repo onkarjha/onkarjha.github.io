@@ -1,0 +1,157 @@
+<html>
+   <head>
+      <title>Paytm Payment Failed</title>
+      <meta name='viewport' content='width=device-width, initial-scale=1'>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <style>
+         @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500;800&display=swap');
+         *{
+         margin:0;
+         font-family: 'Mulish', sans-serif;
+         padding:0;
+         box-sizing:border-box;
+         }body{
+            background-color: #fafafa;
+         }
+         .top{
+         width:100%;
+         top:0;
+         position:fixed;
+         height:60px;background-color: #fafafa;;
+         padding:10px 20px;
+         display:flex;
+         align-items: center;
+         justify-content: space-between;
+         }.logo{
+         height:50px;
+         }.link{
+         color:#0baff6;
+         text-decoration: none;
+         }.body{
+         width:90%;
+         border-radius: 13px;
+         background-color: #ffeaef;
+         padding:20px;
+         margin:auto;
+         margin-top:70px;
+         }.profile{
+         display:flex;
+         margin:13px;
+         align-items: center;
+         }.name{
+         width:60px;
+         height:60px;
+         border-radius:50px;
+         background-color: #d18f00;
+         display:flex;
+         align-items:center;
+         justify-content: center;
+         color:white;
+         font-weight: bold;
+         font-size:22px;
+         }.margin-left{
+         margin-left:15px;
+         }.user_name{
+         font-size:22px;
+         line-height: 2rem;;
+         font-weight: bold;
+         }.status{
+         margin-top: 35px;;
+         display:flex;
+         justify-content: center;
+         align-items: center;
+         }.fail{
+         width:37px;
+         height:37px;
+         background-color: #fd5353;border-radius: 50px;;
+         }.pay{
+         font-weight: bold;
+         font-size:28px;
+         }.tra,.time{
+         text-align: center;
+         margin-top:20px;
+         }.reason{
+         text-align: center;
+         margin-top:30px;
+         font-size:16px;line-height: 1.5rem;;
+         }
+         .body2{
+         width:90%;
+         border-radius: 13px;
+         background-color: #fff;
+         padding:20px;
+         margin:auto;
+         margin-top:20px;
+         border:1px solid #ebebed;
+         }.bold{
+    font-weight:bold;
+         }.suss{
+            display:flex;
+            align-items: center;
+         }.suss > div{
+            height:25px;
+            width:25px;display:flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;;
+         }.suss > p{
+            margin-left: 10px;;
+         }.green{
+            background-color: #00b062;
+         }.red{
+            background-color: #fb5059;
+         }.dots{
+            color:#c5c7c6;width:100%;
+            display:flex;
+            justify-content: center;
+         }button{
+            margin-top:15px;
+            border:2px solid #0baff6;color:#0baff6;
+            border-radius:50px;
+            padding:10px 20px;
+            background-color: #fff;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="top">
+         <i class='fas fa-arrow-left' style='font-size:24px'></i>
+         <img src="pay.png" class="logo">
+         <a class="link" href="#">Help</a>
+      </div>
+      <div class="body">
+         <div class="profile">
+            <div class="name">B</div>
+            <div class="margin-left">
+               <p class="user_name">Bipin Jha</p>
+               <p class="user_bank">State Bank of India</p>
+            </div>
+         </div>
+         <div class="status">
+            <p class="pay">₹3,000</p>
+            &nbsp;&nbsp;
+            <div class="fail"></div>
+         </div>
+         <p class="tra">TRANSATION FAILED</p>
+         <p class="time">29 NOV, 6:32 AM</p>
+         <p class="reason">We are facing some issues with your account. Please try again later.
+            Don't worry, money has not been deducted from your account.
+         </p>
+      </div>
+      <div class="body2">
+        <p>Status: Failed</p><br>
+        <div class="suss">
+            <div class="green"></div>
+            <p>Payment Started by <span class="bold">Bipin Jha</span></p>
+        </div>        
+        <br>
+        <div class="suss">
+            <div class="red"></div>
+            <p>Payment Failed</p>
+        </div>
+        <br>
+        <div class="dots">------------------------------------------</div>
+        <button>Check Balance</button>
+      </div><br>
+   </body>
+</html>
