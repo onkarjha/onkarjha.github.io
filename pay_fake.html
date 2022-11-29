@@ -43,6 +43,7 @@
          align-items: center;
          }.name{
          width:50px;
+         text-transform: uppercase;
          height:50px;
          border-radius:50px;
          background-color: #d18f00;
@@ -144,14 +145,34 @@ $(".form").on('submit',function(e){
 e.preventDefault();
 var rec_name=$(".rec_name").val();
 var rec_bank_name=$(".rec_bank_name").val();
-var rec_ini=$(".rec_ini").val();
+
 var pay_amount=$(".pay_amount").val();
 var sen_name=$(".sen_name").val();
 $(".user_name").text(rec_name);
 $(".user_bank").text(rec_bank_name);
-$(".name").text(rec_ini);
+$(".name").text(rec_name.slice(0, 1));
 $(".payy").text(pay_amount);
 $(".bold").text(sen_name);
+
+const months = [
+   "Jan",
+   "Feb",
+   "Mar",
+   "Apr",
+   "May",
+   "Jun",
+   "Jul",
+   "Aug",
+   "Sep",
+   "Oct",
+   "Nov",
+   "Dec"];
+   const date = new Date();
+
+let day = date.getDate();
+let month = date.getMonth() + 1;
+   var new_t=day+" "+months[month]+", "+date.toLocaleTimeString();
+   $(".time").text(new_t);
 $(".det").hide();
 });
          });
@@ -206,9 +227,7 @@ $(".det").hide();
    <label>Receiver Bank Name</label><br>
    <input type="text" class="rec_bank_name" placeholder="Receiver Bank Name"><br><br>
 
-   <label>Receiver Initial</label><br>
-   <input type="text" class="rec_ini" placeholder="Receiver Initial" maxlength="1"><br><br>
-
+  
    <label>Amount</label><br>
    <input type="text" class="pay_amount" placeholder="Amount"><br><br>
 
