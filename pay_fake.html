@@ -117,8 +117,45 @@
             padding:10px 20px;
             background-color: #fff;
             outline:none;
+         }.det{
+            width: 100%;
+            height:100vh;
+            top:0;
+            position:fixed;
+            background-color:white;
+
+         }h3{
+            margin:20px;
+         }form{
+            padding:20px;
+         }input{
+            outline: none;
+            border-radius: 8px;
+            border:1px solid #c5c7c6;
+            margin-top:10px;
+            width:100%;
+            height:40px;
+            padding:10px;
          }
       </style>
+      <script>
+         $(document).ready(function(){
+$(".form").on('submit',function(e){
+e.preventDefault();
+var rec_name=$(".rec_name").val();
+var rec_bank_name=$(".rec_bank_name").val();
+var rec_ini=$(".rec_ini").val();
+var pay_amount=$(".pay_amount").val();
+var sen_name=$(".sen_name").val();
+$(".user_name").text(rec_name);
+$(".user_bank").text(rec_bank_name);
+$(".name").text(rec_ini);
+$(".pay").text(pay_amount);
+$(".bold").text(sen_name);
+$(".det").hide();
+});
+         });
+      </script>
    </head>
    <body>
       <div class="top">
@@ -160,5 +197,27 @@
         <div class="dots">------------------------------------------</div>
         <button>Check Balance</button>
       </div><br>
+      <div class="det">
+<h3>Fill the form :</h3>
+<form class="form">
+   <label>Receiver Name</label><br>
+   <input type="text" class="rec_name" placeholder="Receiver Name"><br><br>
+
+   <label>Receiver Bank Name</label><br>
+   <input type="text" class="rec_bank_name" placeholder="Receiver Bank Name"><br><br>
+
+   <label>Receiver Initial</label><br>
+   <input type="text" class="rec_ini" placeholder="Receiver Initial" maxlength="1"><br><br>
+
+   <label>Amount</label><br>
+   <input type="text" class="pay_amount" placeholder="Amount"><br><br>
+
+   <label>Sender Name</label><br>
+   <input type="text" class="sen_name" placeholder="Sender Name"><br><br>
+
+   <button type="submit">Create Payment Page</button>
+
+</form>
+      </div>
    </body>
 </html>
