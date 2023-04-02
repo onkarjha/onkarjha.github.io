@@ -862,7 +862,7 @@ ul li{
          min-width: 100%!important;word-break: break-all;
     }.index{
         width: auto!important;
-    }p{
+    }.value{
         word-break: break-all;
     }.form_inp_flex{
         flex-direction: column;
