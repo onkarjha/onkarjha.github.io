@@ -43,7 +43,7 @@ $(document).ready(function() {
       return emailRegex.test(email);
     }
     if (a !== undefined && a !== "" && c !== undefined && c !== "" && isValidEmail(c) && d !== undefined && d !== "" && !isNaN(d) && e !== undefined && e !== "" && a !== undefined && a !== "") {
-      console.log(a, b, c, d, e);
+      alert("Kindly drop us a mail @ onkarjha2003@gmail.com .")
     } else {
       alert("Please fill all the details properly!");
     }
