@@ -3,25 +3,25 @@ $(document).ready(function() {
     delay: 10,
     time: 1000
   });
-  var d = 26;
-  var m = 06;
-  var y = 2003;
-  $(".my_dob").text(d + "/" + m + "/" + y);
+var d = 26;
+var m = 6;
+var y = 2003;
 
-  let currentDate = new Date();
-  let dd = currentDate.getDate();
-   let mm = currentDate.getMonth() + 1;
-    let yy = currentDate.getFullYear();
-  $(".today_year").text(yy);
-  if (mm > m) {
-    if (dd > d) {
-      $(".my_age").text((yy - y) + 1);
-    } else {
-      $(".my_age").text((yy - y));
-    }
-  } else {
-    $(".my_age").text((yy - y));
-  }
+$(".my_dob").text(d + "/" + m + "/" + y);
+
+let currentDate = new Date();
+let dd = currentDate.getDate();
+let mm = currentDate.getMonth() + 1;
+let yy = currentDate.getFullYear();
+
+$(".today_year").text(yy);
+
+if (mm > m || (mm === m && dd >= d)) {
+  $(".my_age").text(yy - y);
+} else {
+  $(".my_age").text(yy - y - 1);
+}
+
   $(".cat p").click(function() {
     var cat = $(this).attr("data-item");
     console.log(cat);
