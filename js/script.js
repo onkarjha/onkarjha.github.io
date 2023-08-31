@@ -14,6 +14,8 @@ let dd = currentDate.getDate();
 let mm = currentDate.getMonth() + 1;
 let yy = currentDate.getFullYear();
 
+console.log("Current Date:", dd + "/" + mm + "/" + yy); // Debug log
+
 $(".today_year").text(yy);
 
 if (mm > m || (mm === m && dd >= d)) {
@@ -21,6 +23,7 @@ if (mm > m || (mm === m && dd >= d)) {
 } else {
   $(".my_age").text(yy - y - 1);
 }
+
 
   $(".cat p").click(function() {
     var cat = $(this).attr("data-item");
