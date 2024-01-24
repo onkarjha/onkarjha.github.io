@@ -40,13 +40,20 @@ if (mm > m || (mm === m && dd >= d)) {
     var c = $(".email").val();
     var d = $(".phone_number").val();
     var e = $(".mess_").val();
-
+    let currentDate = new Date();
     function isValidEmail(email) {
       var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       return emailRegex.test(email);
     }
     if (a !== undefined && a !== "" && c !== undefined && c !== "" && isValidEmail(c) && d !== undefined && d !== "" && !isNaN(d) && e !== undefined && e !== "" && a !== undefined && a !== "") {
-      alert("Kindly drop us a mail @ onkarjha2003@gmail.com .")
+      //https://script.google.com/macros/s/AKfycbypfKxF3GCurfbI79HM07pEFtkVGPhEBrLmYUVnBeefcSsJ5vcww0NZnEpHQBgHvA0A1w/exec
+      $.post("https://script.google.com/macros/s/AKfycbxNiHIwULlQGcdoLZYPGRMHDadL3VxQ5xOFjtz7UTGtmgM7S1lQiAjcOqGlaxe3NazPnA/exec",{first:a,last:b,phone:c,email:d,message:e,date:currentDate},function(res){
+          if(res==1){
+            alert("We received your message! We will reply you as soon as possible!");
+          }else{
+            alert("Error Occured!");
+          }
+      });
     } else {
       alert("Please fill all the details properly!");
     }
