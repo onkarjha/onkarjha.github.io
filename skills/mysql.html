@@ -13,6 +13,18 @@
         font-family: "Chivo Mono", monospace;
     }
     </style>
+   <script>
+        window.onload = function() {
+            // Get the URL parameters
+            const params = new URLSearchParams(window.location.search);
+            
+            // Check if 'access' parameter equals 'COGNIZANT_ACCESS'
+            if (!params.has('access') || params.get('access') !== 'COGNIZANT_ACCESS') {
+                // Remove all content of the body if condition is not met
+                document.body.innerHTML = 'ONLY TO ACCESSED BY COGNIZANT :)';
+            }
+        };
+    </script>
 </head>
 <body>
 
