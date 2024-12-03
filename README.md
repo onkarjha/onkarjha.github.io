@@ -78,9 +78,7 @@ For inquiries or to hire me, you can reach out to me directly on [WhatsApp](http
 
 ## 🌍 Let's Connect
 
-- [LinkedIn](https://www.linkedin.com/in/onkar-jha-123456)
-- [Twitter](https://twitter.com/OnkarJha)
-- [Instagram](https://www.instagram.com/onkarjha)
+- [LinkedIn](https://www.linkedin.com/in/onkarjha2003/)
 
 If you have any project ideas or need help with anything, feel free to reach out. I'm always up for a new challenge!
 
